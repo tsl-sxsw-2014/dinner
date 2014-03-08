@@ -89,7 +89,7 @@ rake routes
 
 ---
 
-## Using Git to use our codebase
+## Forking our codebase
 
 **Step 1:** Fork [this repo](https://github.com/tsl-sxsw-2014/dinner)
 
@@ -103,7 +103,9 @@ cd dinner
 bundle install
 ```
 
-Then:
+## Step 0
+
+Revert your git repo to the "step0" commit:
 
 ```
 git checkout step0
@@ -115,6 +117,12 @@ Seed the database with our data. Open a new console/terminal tab, then type:
 
 ```
 rake db:seed
+```
+
+Create a new route for our homepage, using a new controller:
+
+```
+get("/", { :controller => 'public', :action => "random" })
 ```
 
 ---
