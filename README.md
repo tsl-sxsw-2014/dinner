@@ -103,7 +103,7 @@ cd dinner
 bundle install
 ```
 
-## Step 0
+## Step 0: Seeds, new controller
 
 Revert your git repo to the "step0" commit:
 
@@ -124,6 +124,18 @@ Create a new route for our homepage, using a new controller:
 ```
 get("/", { :controller => 'public', :action => "random" })
 ```
+
+Create our new controller. First create `public_controller.rb` in your app > controllers directory. Then add this in the file:
+
+```
+class PublicController < ApplicationController
+  
+end
+```
+
+## Step 1: Templates
+
+See this visualization of [how templates are compiled](https://docs.google.com/a/starterleague.com/drawings/d/1wNjW0vDPKeYx4V0oRTq26zRVPZEcssliYp_nVfTrdAM/edit).
 
 ---
 
@@ -177,6 +189,12 @@ end
 - `clear` to clear your terminal section
 
 ## Rails reference
+
+### MVC: Model-View-Controller
+
+- **Model**: how your nouns are defined in the database
+- **Controller**: handles browser requests, does logic, and sends simple information to the view
+- **View**: takes the values from the controller, combines it with HTML, and sends it to the browser
 
 ### CRUD Resource
 
