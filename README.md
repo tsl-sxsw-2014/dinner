@@ -94,12 +94,15 @@ cd
 rm -rf dinner
 git clone https://YOUR-GIT-REPO-URL
 cd dinner
+bundle install
 ```
 
 Then:
 
 ```
 git checkout step0
+rake db:migrate
+rails server
 ```
 
 ---
