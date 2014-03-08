@@ -52,6 +52,7 @@ Load up [this Google doc](https://docs.google.com/document/d/18k1szk6zdQAwIQ5Yl2
 - `rails new dinner` Create a new app
 - `cd dinner` Navigate into your app
 - `rails server` Start your web server
+- Visit your app by going to Preview > Port 3000 in the menu bar.
 
 ---
 
@@ -98,6 +99,7 @@ end
 - `cd` Navigate to your Home folder
 - `cd <folder name>` Navigate into a subfolder
 - `cd ..` Navigate back to the parent folder
+- `Control + c` Stop the server, get back to command line
 
 ## Nitrous.io reference
 
