@@ -24,34 +24,38 @@
 - 4:15pm - 5:00pm : Deploy to the web
 - 5:00pm - 6:00pm : Reflections and office hours
 
-### Backchannel doc
+---
 
-Load up [this Google doc](https://docs.google.com/document/d/18k1szk6zdQAwIQ5Yl2pmTZyGBkVEwZj8g0j3yHUogeQ/edit?usp=sharing) (anonymously, if you'd like) to share feedback & questions. We'll keep an eye on it throughout the day.
+## Setup
 
 ### Environment setup
 
  - If you haven't already, create an account at [GitHub](https://github.com/). If you have, log in.
  - If you haven't already, create an account at [Nitrous.io](https://www.nitrous.io/). If you have, log in. Create a free box. Ignore all the upsell prompts. From your Boxes page, choose the box you created and click "IDE".
 
-### Navigating with the command line
+### Backchannel doc
 
-- `pwd` Display your current location
-- `ls` List the contents of the current folder
-- `mkdir <folder name>` Create a subfolder
-- `cd` Navigate to your Home folder
-- `cd <folder name>` Navigate into a subfolder
-- `cd ..` Navigate back to the parent folder
+Load up [this Google doc](https://docs.google.com/document/d/18k1szk6zdQAwIQ5Yl2pmTZyGBkVEwZj8g0j3yHUogeQ/edit?usp=sharing) (anonymously, if you'd like) to share feedback & questions. We'll keep an eye on it throughout the day.
 
 ### Download our mockup
 
 - Go to [the GitHub repository for our mockup](https://github.com/tsl-sxsw-2014/dinner-mockup) and click the Download Zip button. Unzip.
 - Open up `item.html` and `new.html` and look 'em over.
 
-### Rails quickstart
+---
 
-- `rails new APPNAME` Create a new app
-- `cd APPNAME` Navigate into your app
+
+## Creating an app
+
+### First steps
+
+- `rails new dinner` Create a new app
+- `cd dinner` Navigate into your app
 - `rails server` Start your web server
+
+---
+
+## Deployment
 
 ### How to deploy site to Heroku (don't do this right now)
 
@@ -83,6 +87,17 @@ end
 - `git push heroku master` Send our code to Heroku for deployment
 - `heroku run rake db:migrate` Create any database tables we need on Heroku's server
 - `heroku open` Open our live app
+
+---
+
+## Command line reference
+
+- `pwd` Display your current location
+- `ls` List the contents of the current folder
+- `mkdir <folder name>` Create a subfolder
+- `cd` Navigate to your Home folder
+- `cd <folder name>` Navigate into a subfolder
+- `cd ..` Navigate back to the parent folder
 
 ## Nitrous.io reference
 
@@ -133,7 +148,7 @@ end
 - In the controller file, add a line like this: `http_basic_authenticate_with :name => "sxs2", :password => "2014"` on line 2
 - This will require authentication for every action in this controller.
 
-- - - -
+---
 
 Please [stay in touch with us](https://twitter.com/starterleague); we'd love to see the beautiful things you build.
 
