@@ -1,4 +1,5 @@
 Dinner::Application.routes.draw do
+  get '/' => 'public#random'
   resources :items
 
   # The priority is based upon order of creation: first created -> highest priority.
