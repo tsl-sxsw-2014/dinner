@@ -1,7 +1,11 @@
 # Rails for Designers
 
+#### Social stuff
+
 - Feel free to tag your tweets with [#tslrails](https://twitter.com/search?q=%23tslrails&src=hash)
 - We live at [@starterleague](https://twitter.com/starterleague)
+
+#### Us
 
 - [Arjun Venkataswamy](https://twitter.com/thevenkataswamy)
 - [Sandor Weisz](http://santheo.com)
@@ -79,6 +83,10 @@ end
 - `git push heroku master` Send our code to Heroku for deployment
 - `heroku run rake db:migrate` Create any database tables we need on Heroku's server
 - `heroku open` Open our live app
+
+## Nitrous.io reference
+
+- `clear` to clear your terminal section
 
 ## Rails reference
 
