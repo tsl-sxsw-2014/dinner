@@ -3,6 +3,8 @@ class ItemsController < ApplicationController
 
   http_basic_authenticate_with name: "sxsw", password: "2014"
 
+  layout 'admin'
+
   # GET /items
   # GET /items.json
   def index
