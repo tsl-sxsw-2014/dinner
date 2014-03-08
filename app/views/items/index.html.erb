@@ -1,6 +1,10 @@
 <h1>Listing items</h1>
 
-<table>
+<p>
+<%= link_to 'New Item', new_item_path, {:class => "btn btn-default" } %>
+</p>
+
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -30,4 +34,3 @@
 
 <br>
 
-<%= link_to 'New Item', new_item_path %>
