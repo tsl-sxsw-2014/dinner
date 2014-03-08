@@ -23,5 +23,6 @@ class PublicController < ApplicationController
   end
 
   def new
+    @item = Item.new
   end
 end

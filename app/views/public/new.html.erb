@@ -1,1 +1,44 @@
-success!
+<div class="wrap add-item">
+    <div class="content">
+        <% if notice %>
+        <p class="notice"><%= notice %></p>
+        <% end %>
+
+        <h1>
+            Add an item
+        </h1>
+        <%= form_for(@item, url: '/create') do |f| %>
+          <% if @item.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+              <ul>
+              <% @item.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="field">
+            <%= f.label :title %>
+            <%= f.text_field :title %>
+          </div>
+          <div class="field">
+            <%= f.label :description %>
+            <%= f.text_area :description %>
+          </div>
+          <div class="field">
+            <%= f.label :link %>
+            <%= f.text_field :link %>
+          </div>
+          <div class="field">
+            <%= f.label :category %>
+            <%= f.text_field :category %>
+          </div>
+          <div class="actions">
+            <%= f.submit "Create this item", class: 'button' %>
+          </div>
+        <% end %>
+    </div>
+</div>
