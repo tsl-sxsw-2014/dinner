@@ -105,6 +105,12 @@ rake db:migrate
 rails server
 ```
 
+Seed the database with our data. Open a new console/terminal tab, then type:
+
+```
+rake db:seed
+```
+
 ---
 
 ## Deployment
