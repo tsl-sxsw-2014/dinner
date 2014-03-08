@@ -1,6 +1,11 @@
-<h1>Editing item</h1>
+<ol class="breadcrumb">
+    <li><%= link_to 'All items', items_path %></li>
+    <li><%= link_to @item.title, item_path %></li>
+</ol>
+
+<div class="page-header">
+    <h1>Edit <%= @item.title %></h1>
+</div>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @item %> |
-<%= link_to 'Back', items_path %>

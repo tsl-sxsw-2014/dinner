@@ -1,24 +1,26 @@
-<p id="notice"><%= notice %></p>
+<ol class="breadcrumb">
+    <li><%= link_to 'All items', items_path %></li>
+</ol>
 
-<p>
-  <strong>Title:</strong>
-  <%= @item.title %>
-</p>
+<% if notice %>
+<p class="alert alert-success"><%= notice %></p>
+<% end %>
 
-<p>
-  <strong>Description:</strong>
+<div class="page-header">
+    <h1>
+      <%= @item.title %>
+    </h1>
+</div>
+
+<p class="desc">
   <%= @item.description %>
 </p>
 
 <p>
-  <strong>Link:</strong>
-  <%= @item.link %>
+  <%= link_to @item.link, @item.link %><br>
+  <strong>Category:</strong> <%= @item.category %>
 </p>
 
 <p>
-  <strong>Category:</strong>
-  <%= @item.category %>
+    <%= link_to 'Edit this', edit_item_path(@item), {:class => "btn btn-default"} %>
 </p>
-
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
