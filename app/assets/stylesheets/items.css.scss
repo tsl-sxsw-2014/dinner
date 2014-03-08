@@ -1,3 +1,181 @@
 // Place all the styles related to the Items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "reset";
+
+$fonts: "Coustard", Helvetica, arial, sans-serif;
+
+%container {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+
+// Global tags
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: $fonts;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+a {
+    color: #800000;
+}
+
+.public {
+    h1 {
+        font-size: 82px;
+        line-height: 1;
+        font-weight: bold;
+        margin: 0 0 25px;
+
+        span {
+            font-size: 16px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            color: fade-out(black, .6);
+            display: block;
+            font-weight: normal;
+        }
+    }
+
+    .wrap {
+        height: 100%;
+        background-repeat: repeat;
+        background-size: 220px auto;
+        background-position: 50% 50%;
+        padding-top: 230px;
+    }
+
+    .stripe {
+        background:fade-out(white,.04);
+        box-shadow: 0 0 4px fade-out(black, .5);
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    .content {
+        @extend %container;
+
+        p {
+            line-height: 1.4;
+            font-size: 20px;
+            margin-bottom: 1.2em;
+        }
+
+        .add-link {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+    }
+
+    .field, .actions {
+        margin-bottom: 10px;
+    }
+
+    .button {
+        border: none;
+        font-family: $fonts;
+        background: lighten(#800000,10%);
+        border-radius: 24px;
+        padding: .5em 1em;
+        color: white;
+        text-decoration: none;
+        opacity: .8;
+        display: inline-block;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .notice {
+        color: green;
+    }
+
+    .field_with_errors {
+        padding: 2px;
+        background-color: red;
+        display: table;
+    }
+
+    #error_explanation {
+        width: 450px;
+        border: 2px solid red;
+        padding: 7px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        background-color: #f0f0f0;
+
+        h2 {
+            text-align: left;
+            font-weight: bold;
+            padding: 5px 5px 5px 15px;
+            font-size: 12px;
+            margin: -7px;
+            margin-bottom: 0px;
+            background-color: #c00;
+            color: #fff;
+        }
+
+        ul li {
+            font-size: 12px;
+            list-style: square;
+        }
+    }
+
+    .add-item {
+        padding-top: 20px;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .content {
+            text-align: left;
+            width: 500px;
+        }
+
+        label {
+            font-size: 16px;
+            display: block;
+            margin: 0 0 .4em;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        %input {
+            width: 100%;
+            margin: 0 0 1em;
+            border: 1px solid #999;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: $fonts;
+            padding: .6em 1em;
+        }
+
+        input[type=text], textarea {
+            @extend %input;
+        }
+    }
+}
+
+// ADMIN PAGES
+
+.admin {
+    p {
+        margin-bottom: 1.4em;
+    }
+
+    .desc {
+        font-size: 18px;
+    }
+}
