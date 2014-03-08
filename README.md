@@ -75,6 +75,12 @@ rake db:migrate
 rails destroy scaffold Item
 ```
 
+### Sandbox for playing with Ruby and with your models
+
+```
+rails console
+```
+
 ---
 
 ## Deployment
