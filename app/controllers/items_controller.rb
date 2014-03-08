@@ -1,6 +1,8 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
+  http_basic_authenticate_with name: "sxsw", password: "2014"
+
   # GET /items
   # GET /items.json
   def index
