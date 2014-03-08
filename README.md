@@ -1,11 +1,12 @@
 # Rails for Designers
 
-[#tslrails](https://twitter.com/search?q=%23tslrails&src=hash)
-[@starterleague](https://twitter.com/starterleague)
+- Feel free to tag your tweets with [#tslrails](https://twitter.com/search?q=%23tslrails&src=hash)
+- We live at [@starterleague](https://twitter.com/starterleague)
 
 - [Arjun Venkataswamy](https://twitter.com/thevenkataswamy)
 - [Sandor Weisz](http://santheo.com)
 - [Mike McGee](http://twitter.com/michaelmcgee)
+- [The Starter League](http://www.starterleague.com/)
 
 ### Agenda
 
