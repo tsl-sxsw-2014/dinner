@@ -17,7 +17,7 @@
 - 2:30pm - 3:30pm : Add an API
 - 2:45pm - 4:00pm : Create admin functionality
 - 4:15pm - 5:00pm : Deploy to the web
-- 5:00pm - 6:0pm : Reflections and office hours
+- 5:00pm - 6:00pm : Reflections and office hours
 
 ### Backchannel doc
 
@@ -111,7 +111,7 @@ end
 
 ### HTML templates in Rails
 
-- Your HTML templates are located in the `app/views/<table name (plural)>` folder.
+- Your HTML templates are located in the `app/views/CONTROLLER-NAME>` folder.
 - View templates are standard HTML with a bit of Ruby sprinkled in.
 - Ruby goes in special Embedded Ruby Tags, <%=  %>
 - Check out `app/views/projects/show.html.erb`. What's the pattern for accessing data from the database?
