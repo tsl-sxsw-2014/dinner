@@ -83,6 +83,27 @@ rails console
 
 ---
 
+## Using Git to use our codebase
+
+**Step 1:** Fork [this repo](https://github.com/tsl-sxsw-2014/dinner)
+
+**Step 2:** Clone your fork to your Nitrous account. First delete the old `dinner` directory.
+
+```
+cd
+rm -rf dinner
+git clone https://YOUR-GIT-REPO-URL
+cd dinner
+```
+
+Then:
+
+```
+git checkout step0
+```
+
+---
+
 ## Deployment
 
 ### How to deploy site to Heroku (don't do this right now)
