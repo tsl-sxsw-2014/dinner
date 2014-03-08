@@ -21,4 +21,7 @@ class PublicController < ApplicationController
       @image_url = result["image"]["full"]
     end
   end
+
+  def new
+  end
 end
