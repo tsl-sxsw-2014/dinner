@@ -81,6 +81,12 @@ rails destroy scaffold Item
 rails console
 ```
 
+### Viewing all the routes your app knows about
+
+```
+rake routes
+```
+
 ---
 
 ## Using Git to use our codebase
