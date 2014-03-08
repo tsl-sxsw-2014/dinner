@@ -12,6 +12,9 @@ class PublicController < ApplicationController
     parsed_response = JSON.parse(response)
     results = parsed_response["results"]
 
-    @image_url = results[0]['image']['full']
+    random_num = rand(results.count)
+    result = results[random_num]
+
+    @image_url = result["image"]["full"]
   end
 end
