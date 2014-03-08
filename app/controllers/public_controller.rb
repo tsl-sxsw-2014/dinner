@@ -15,6 +15,10 @@ class PublicController < ApplicationController
     random_num = rand(results.count)
     result = results[random_num]
 
-    @image_url = result["image"]["full"]
+    if (result['image']['alt'].include? "not digitized") || (result['image']['alt'].include? "Look magazine")
+      @image_url = "http://cdn.sheknows.com/articles/2011/02/Fork_knife_and_plate.jpg"
+    else
+      @image_url = result["image"]["full"]
+    end
   end
 end
