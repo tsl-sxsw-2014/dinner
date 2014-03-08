@@ -51,8 +51,23 @@ Load up [this Google doc](https://docs.google.com/document/d/18k1szk6zdQAwIQ5Yl2
 
 - `rails new dinner` Create a new app
 - `cd dinner` Navigate into your app
+- `bundle install` To set up your environemnt, in case this didn't happen automatically.
 - `rails server` Start your web server
 - Visit your app by going to Preview > Port 3000 in the menu bar.
+
+### Creating a model
+
+For our purposes, we'll use `Item`, but it can be anything.
+
+```
+rails generate scaffold Item title:string description:string link:string image:string category:string
+```
+
+### Destroy a model
+
+```
+rails destroy scaffold Item
+```
 
 ---
 
