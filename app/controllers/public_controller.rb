@@ -25,4 +25,22 @@ class PublicController < ApplicationController
   def new
     @item = Item.new
   end
+
+  def create
+    @item = Item.new
+    @item.title = params[:item][:title]
+    @item.description = params[:item][:description]
+    @item.link = params[:item][:link]
+    @item.category = params[:item][:category]
+
+    respond_to do |format|
+      if @item.save
+        format.html { redirect_to new_path, notice: 'Item was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @item }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @item.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 end
