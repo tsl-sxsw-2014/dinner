@@ -3,7 +3,7 @@
 #### Screencasts from the workshop
 
 These vidoes are minimally edited, but they should be useful as notes. 
-
+- [Video 1/7 - 45 min](https://vimeo.com/89067084)
 - [Video 2/7 - 9 min ](https://vimeo.com/89065043)
 - [Video 4/7 - 22 min](https://vimeo.com/89065044)
 
