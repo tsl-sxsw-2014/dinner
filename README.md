@@ -9,6 +9,7 @@ These vidoes are minimally edited, but they should be useful as notes.
 - [Video 4/7 - 22 min](https://vimeo.com/89065044)
 - [Video 5/7 - 18 min](https://vimeo.com/89072054)
 - [Video 6/7 - 16 min](https://vimeo.com/89071195)
+- [Video 7/7 - 112 min](https://vimeo.com/89075343)
 
 #### Social stuff
 
